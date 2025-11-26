@@ -1,0 +1,136 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: white;
+    transition: 0.4s;
+}
+
+/* Dark Mode Active */
+.light {
+    background: #f2f2f2;
+    color: black;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #6a5acd;
+}
+
+/* MODE BUTTON */
+.mode-btn {
+    padding: 10px 18px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: url('https://images.unsplash.com/photo-1522156373667-4c7234bbd804?auto=format&fit=crop&w=1200&q=60');
+    background-size: cover;
+    background-position: center;
+}
+
+.glass {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: fade 1.5s ease;
+}
+
+.glass h2 {
+    font-size: 40px;
+}
+
+.glass h2 span {
+    color: #6a5acd;
+}
+
+.glass p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #6a5acd;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* SECTIONS */
+.container {
+    padding: 90px 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+/* ANIMATIONS */
+@keyframes fade {
+    from {opacity: 0; transform: translateY(20px);}
+    to   {opacity: 1; transform: translateY(0);}
+}

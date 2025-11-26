@@ -1,33 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ayoub Tahri – Web Developer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: #f5f5f5;
-    }
-    .card {
-      background: white;
-      padding: 25px;
-      margin: auto;
-      width: 350px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 { color: #333; }
-    p { color: #555; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayoub | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <h1>Ayoub Tahri</h1>
-    <p>Full Stack Web Developer</p>
-    <p>PHP • JavaScript • MySQL • React</p>
-    <p>Welcome to my portfolio!</p>
-  </div>
+
+    <!-- Navbar -->
+    <header class="header">
+        <h1 class="logo">Ayoub<span>.</span></h1>
+        <button id="modeToggle" class="mode-btn">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="glass">
+            <h2>Hello, I'm <span>Ayoub</span></h2>
+            <p>Web Developer specializing in modern and dynamic web applications.</p>
+
+            <a href="#skills" class="btn">Explore Skills</a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">PHP</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Laravel</div>
+            <div class="skill-card">Git / GitHub</div>
+            <div class="skill-card">Bootstrap</div>
+            <div class="skill-card">Tailwind CSS</div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact container">
+        <h2 class="section-title">Contact</h2>
+
+        <p>You can contact me anytime for a project or collaboration.</p>
+
+        <a href="mailto:ayoub@example.com" class="btn">Send Email</a>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
